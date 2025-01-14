@@ -58,3 +58,31 @@ print(f"Levenshtein Distance: {distance}")
     - `levenshtein.error`: If an internal error occurs during computation.
     - `TypeError`: If the inputs are of unsupported types.
     - `ValueError`: If list elements are out of range (0-254).
+
+## Development
+
+### Build the Module Locally
+
+1. Ensure you have Python development headers installed:
+    ```bash
+    sudo apt-get install python3-dev
+    ```
+2. Build and install the module:
+    ```bash
+    python3 setup.py build
+    python3 setup.py install --user
+    ```
+3. Run tests to verify:
+    ```bash
+    cd test
+    python3 -m unittest -v leveneshtein_distance_test.py
+    ```
+
+### Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`.
+3. Commit your changes: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Open a pull request.
